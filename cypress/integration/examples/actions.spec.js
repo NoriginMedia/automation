@@ -46,4 +46,9 @@ context('Actions', () => {
       .should('have.class', 'error')
       .prev().should('have.attr', 'style', 'color: red;')
   })
+  it('extra', () => {
+    // https://on.cypress.io/type
+    cy.get('.action-email')
+      .type('fake@email.com').should('have.value', 'fake@email.com')
+  })
 })
