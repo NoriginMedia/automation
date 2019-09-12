@@ -5,6 +5,10 @@ pipeline {
     stage('Preflight') {
       steps {
         echo "====++++Preflight++++===="
+        sh 'node -v'
+        sh 'npm --version'
+        sh 'rm -rf node_modules'
+        sh 'npm install'
       }
     }
     stage('Test') {
