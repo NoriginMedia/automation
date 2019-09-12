@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  },
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test:ui": "npm run build && start-server-and-test 'http-server -p 3000 ./dist' http-get://localhost:3000 cy:run"
+  }
+}
