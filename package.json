@@ -5,6 +5,6 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test:ui": "npm run build && start-server-and-test 'http-server -p 3000 ./dist' http-get://localhost:3000 cy:run --record --key e885183e-6ef2-4cc2-83f1-05cf53cb986b" 
+    "test:ui": "start-server-and-test 'http-server -p 3000 ./dist' http-get://localhost:3000 cy:run --record --key e885183e-6ef2-4cc2-83f1-05cf53cb986b" 
   }
 }
