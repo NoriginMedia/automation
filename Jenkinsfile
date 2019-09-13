@@ -1,3 +1,5 @@
+// TODO
+// https://github.com/cypress-io/cypress-example-kitchensink/blob/master/Jenkinsfile
 pipeline {
   agent {label 'slave-dc01'}
   tools {nodejs "node"}
