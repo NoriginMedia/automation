@@ -5,6 +5,6 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test:ui": "cypress run --record --key e885183e-6ef2-4cc2-83f1-05cf53cb986b --parallel"
+    "test:ui": "cypress run --record --key bc5a5ab6-3699-4298-a5f3-14fea7850a86 --parallel"
   }
 }
