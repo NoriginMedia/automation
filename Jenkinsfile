@@ -31,9 +31,9 @@ pipeline {
         sh 'npm --version'
         sh 'rm -rf node_modules'
         script {
-          env.BRANCH_TIPE = get_branch_type(env.GIT_BRANCH);
+          env.BRANCH_TYPE = get_branch_type(env.GIT_BRANCH);
         }
-        echo env.BRANCH_TIPE
+        echo env.BRANCH_TYPE
         sh 'npm install'
       }
     }
