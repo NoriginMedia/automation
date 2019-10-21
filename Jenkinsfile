@@ -21,7 +21,11 @@ def get_branch_type(String branch_name) {
 }
 
 pipeline {
-  agent {label 'slave-dc01'}
+  agent {
+    docker {
+      image 'cypress/base:10'
+    }
+  }
   tools {nodejs "node"}
   stages {
     stage('Preflight') {
