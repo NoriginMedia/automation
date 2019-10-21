@@ -23,7 +23,7 @@ def get_branch_type(String branch_name) {
 pipeline {
   agent {
     docker {
-      image 'cypress/base:10'
+      image 'cypress/base:10.16.0'
     }
   }
   tools {nodejs "node"}
